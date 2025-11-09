@@ -1,24 +1,38 @@
-.odd{
-    background-color: rgb(157, 228, 212);
-}
-.even{
-    background-color: rgb(227, 180, 180);
-}
-body{
-    background: linear-gradient(to top, rgb(70, 203, 233), rgb(166, 168, 218), rgb(204, 220, 142));
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-#paragraphs{
-    font-family:sans-serif;
-    font-size:15px;
-    font-style:italic;
-    font-weight:normal;
-    text-align:justify;
-    text-decoration:underline;
+  body {
+    height: 100vh; /* Chiều cao = toàn bộ màn hình */
+    display: flex;
+    justify-content: center; /* Căn giữa ngang */
+    align-items: center; /* Căn giữa dọc */
+    background: linear-gradient(to top, rgb(95, 192, 234), rgb(226, 125, 110)), rgb(168, 60, 185);
+    font-family:Tahoma, sans-serif
+  }
+
+#login_form{
     border-style:solid;
-    border-width:2px;
-    border-color:rgb(167, 31, 31);
-    border-radius:20px;
-    padding:10px; 
+    border-color: brown;
+    border-radius: 10px;
+    background: linear-gradient(to right, rgb(236, 228, 84), rgb(169, 240, 235)), rgb(124, 122, 185);
+    width: 400px;
+    height:200px;
+    padding: 20px;
+    box-shadow: 30px 30px 10px #888888;
+    font-size: 20px;
+    text-align: center;
+    align-content: center;
+}
+label {
+  display: inline-block;
+  width: 100px; /* Độ rộng đều nhau để input thẳng hàng */
+  margin-bottom: 10px; /* Tạo khoảng cách dọc giữa các dòng */
+}
+button:active {
+  background-color: #c53f38; /* Màu nền khi nhấn */
+  box-shadow: 5px 5px 5px #77a8af; /* Hiệu ứng đổ bóng khi nhấn */
+}
+button{
+    border-radius: 8px;
+}
+input:active {
+  background-color: #b5bec0; /* Màu nền khi nhấn */
+  box-shadow: 5px 5px 5px #97dd3b; /* Hiệu ứng đổ bóng khi nhấn */
 }
